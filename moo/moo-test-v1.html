@@ -9,10 +9,9 @@
       <a-assets>
         <a-asset id="cesium-man" src="https://rawgit.com/KhronosGroup/glTF-Sample-Models/master/2.0/CesiumMan/glTF-Binary/CesiumMan.glb"></a-asset>
       </a-assets>
-      <a-marker preset='hiro'>
-        <!--Adding a glTF 2.0 model to your scene-->
-        <a-entity id="walker" gltf-model="#cesium-man" animation-mixer>
-        </a-entity>
+      <a-marker type='pattern' url='https://raw.githack.com/dTATb/moo-test/master/moo/moo-marker.patt'>
+		<a-entity id="walker" scale="0.01 0.01 0.01" gltf-model="#cesium-man" animation-mixer>
+		</a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
